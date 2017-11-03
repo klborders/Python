@@ -27,8 +27,7 @@
 
 from random import randint
 
-def roll_dice():
-    x = input('How many sides are on the dice? ')
+def roll_dice(x):
     if isinstance(int(x), int):
         return randint(1, int(x))
     else:
@@ -36,9 +35,10 @@ def roll_dice():
         return exit()
 
 def rolling():
+    x = input('How many sides are on the dice? ')
     user_input = 'y'
     while user_input.lower() == 'y':
-        print(roll_dice())
+        print(roll_dice(x))
         user_input = raw_input("Would you like to roll again?(Y/n) ")
 
 rolling()
