@@ -15,5 +15,3 @@ def odd_or_even(int, check):
 number = int(input('Give me a number: '))
 check = int(input('Check to se if number is divisble by... '))
 print(odd_or_even(number,check))
-
-        
