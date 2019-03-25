@@ -40,3 +40,23 @@ def findLargestNum(nums):
 # Find the Smallest Number in a List
 def findSmallestNum(lst):
     return min(lst)
+
+# Compare Strings by Sum of Characters
+def comp(txt1, txt2):
+	return len(txt1) == len(txt2)
+
+# Return the Last Element in a List
+def getLastItem(lst):
+	return lst[-1]	
+
+# Multiple of 100
+def divisible(num):
+	return num % 100 == 0
+
+# Count Syllables
+def number_syllables(word):
+	return len(word.split('-'))
+
+# Slice of Pie
+def equal_slices(total, people, each):
+	return people * each <= total
